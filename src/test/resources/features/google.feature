@@ -14,5 +14,7 @@ Feature: Verify user open google page
    Scenario: Google search test
      Given  i am at google home page
      When  I search for sauceLabs
+    Then i verify the title is Saucelabs
+
 
 

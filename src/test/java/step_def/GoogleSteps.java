@@ -31,13 +31,14 @@ public class GoogleSteps {
         googlePage.searchBar.sendKeys("saucelabs",Keys.ENTER);
 
     }
-   /* @Then("I verify yhe title is SauceLabs")
-    public void i_verify_yhe_title_is_sauce_labs() {
-        String expectedTitle="saucelabs";
+
+    @Then("i verify the title is Saucelabs")
+    public void i_verify_the_title_is_saucelabs() {
+        String expectedTitle="saucelabstyyy";
         String actualTitle=Driver.getDriver().getTitle();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
+    }
 
-    }*/
 
 
 
