@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa7c3041-392d-472a-8d59-0611d566cf25" name="Changes" comment="my first cucumber project">
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/MyFirstAPITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/models/book/BookRecords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/models/book/CreateOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/models/book/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/tests/BookAPITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilitis/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilitis/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/WebOrdersSBPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/WebOrdersSBPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step_def/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_def/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step_def/SmartBearSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_def/SmartBearSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SBTest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/SBTest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/MyFirstAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/MyFirstAPITest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,6 @@
   <component name="ProjectId" id="2WqOsJ5hFnt9UQA1CNKqbsbej1f" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
@@ -73,42 +71,66 @@
       <recent name="C:\Users\Gul" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyFirstAPITest.airtableAuth">
-    <configuration name="Feature: wikiScenarioOutline" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/wikiScenarioOutline.feature" />
-      <option name="GLUE" value="step_def" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+  <component name="RunManager" selected="JUnit.BookAPITest.postAnOrder">
+    <configuration name="BookAPITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFall23" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: wikiScenarioOutline" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="api.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="api.tests" />
+      <option name="MAIN_CLASS_NAME" value="api.tests.BookAPITest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User should be able to place order with different data sets" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SBTest.feature" />
-      <option name="GLUE" value="step_def" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="BookAPITest.createJsonObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFall23" />
-      <option name="NAME_FILTER" value="^User should be able to place order with different data sets$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should be able to place order with different data sets$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User should be able to place order with different data sets" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="api.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="api.tests" />
+      <option name="MAIN_CLASS_NAME" value="api.tests.BookAPITest" />
+      <option name="METHOD_NAME" value="createJsonObject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookAPITest.createOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFall23" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.tests" />
+      <option name="MAIN_CLASS_NAME" value="api.tests.BookAPITest" />
+      <option name="METHOD_NAME" value="createOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookAPITest.postAnOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFall23" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.tests" />
+      <option name="MAIN_CLASS_NAME" value="api.tests.BookAPITest" />
+      <option name="METHOD_NAME" value="postAnOrder" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,45 +139,13 @@
       <module name="SeleniumFall23" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.*" />
+          <option name="PATTERN" value="api.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.MyFirstAPITest" />
+      <option name="PACKAGE_NAME" value="api.tests" />
+      <option name="MAIN_CLASS_NAME" value="api.tests.MyFirstAPITest" />
       <option name="METHOD_NAME" value="airtableAuth" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyFirstAPITest.getAllOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFall23" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.MyFirstAPITest" />
-      <option name="METHOD_NAME" value="getAllOrders" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyFirstAPITest.getListOfTheBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFall23" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.MyFirstAPITest" />
-      <option name="METHOD_NAME" value="getListOfTheBooks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookAPITest.postAnOrder" />
+        <item itemvalue="JUnit.BookAPITest" />
+        <item itemvalue="JUnit.BookAPITest.createOrder" />
+        <item itemvalue="JUnit.BookAPITest.createJsonObject" />
         <item itemvalue="JUnit.MyFirstAPITest.airtableAuth" />
-        <item itemvalue="JUnit.MyFirstAPITest.getAllOrders" />
-        <item itemvalue="JUnit.MyFirstAPITest.getListOfTheBooks" />
-        <item itemvalue="Cucumber Java.Feature: wikiScenarioOutline" />
-        <item itemvalue="Cucumber Java.Scenario: User should be able to place order with different data sets" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699297187966</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="my first cucumber project">
+      <created>1705400805448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705400805448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
