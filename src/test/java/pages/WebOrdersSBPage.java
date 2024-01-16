@@ -19,7 +19,37 @@ public class WebOrdersSBPage {
     public WebElement getProductDropdown;
 
     @FindBy(xpath = "//input[@id=\"ctl00_MainContent_fmwOrder_txtQuantity\"]")
-    public WebElement
+    public WebElement quantity;
+    @FindBy(xpath = "//input[@id=\"ctl00_MainContent_fmwOrder_txtName\"]")
+    public WebElement name;
+
+    @FindBy(xpath = "//input[@id=\"ctl00_MainContent_fmwOrder_TextBox2\"]")
+    public WebElement Street;
+
+    @FindBy(xpath = "//input[@id=\"ctl00_MainContent_fmwOrder_TextBox3\"]")
+    public WebElement City;
+    @FindBy(xpath = "//input[@id=\"ctl00_MainContent_fmwOrder_TextBox4\"]")
+    public WebElement State;
+
+    @FindBy(xpath = "//input[@id=\"ctl00_MainContent_fmwOrder_TextBox4\"]")
+    public WebElement zipCode;
+
+    @FindBy(xpath = "//input[@id=\"ctl00_MainContent_fmwOrder_cardList_0\"]")
+    public WebElement VisaRadioBtn;
+
+    @FindBy(xpath = "//input[@id=\"ctl00_MainContent_fmwOrder_TextBox6\"]")
+    public WebElement CardNumber;
+
+    @FindBy(xpath = "//input[@id=\"ctl00_MainContent_fmwOrder_TextBox1\"]")
+    public WebElement ExpiryDate;
+
+    @FindBy(xpath = "//a[@class=\"btn_light\"]")
+    public WebElement processBtn;
+
+
+
+
+
 
 
 

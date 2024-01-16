@@ -5,23 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa7c3041-392d-472a-8d59-0611d566cf25" name="Changes" comment="my first cucumber project">
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/WikiPages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/step_def/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/step_def/WikiSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/SBTest.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/wiki.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/wikiScenarioOutline.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/wiki_background.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/wiki_params.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/MyFirstAPITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilitis/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilitis/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/WebOrdersSBPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/WebOrdersSBPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step_def/GoogleSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_def/GoogleSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step_def/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_def/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/step_def/SmartBearSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_def/SmartBearSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/google.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/google.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/smartBear.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/smartBear.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SBTest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/SBTest.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +73,7 @@
       <recent name="C:\Users\Gul" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CukesRunner (1)">
+  <component name="RunManager" selected="JUnit.MyFirstAPITest.airtableAuth">
     <configuration name="Feature: wikiScenarioOutline" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/wikiScenarioOutline.feature" />
@@ -101,14 +93,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: wiki_background" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User should be able to place order with different data sets" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/wiki_background.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SBTest.feature" />
       <option name="GLUE" value="step_def" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SeleniumFall23" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: wiki_background" />
+      <option name="NAME_FILTER" value="^User should be able to place order with different data sets$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should be able to place order with different data sets$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User should be able to place order with different data sets" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -120,67 +113,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: wiki_params" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/wiki_params.feature" />
-      <option name="GLUE" value="step_def" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="MyFirstAPITest.airtableAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFall23" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: wiki_params" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.MyFirstAPITest" />
+      <option name="METHOD_NAME" value="airtableAuth" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Wikipedia search functionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/wikiScenarioOutline.feature" />
-      <option name="GLUE" value="step_def" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="MyFirstAPITest.getAllOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFall23" />
-      <option name="NAME_FILTER" value="^Wikipedia search functionality$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Wikipedia search functionality$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Wikipedia search functionality" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.MyFirstAPITest" />
+      <option name="METHOD_NAME" value="getAllOrders" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CukesRunner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyFirstAPITest.getListOfTheBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFall23" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runners.*" />
+          <option name="PATTERN" value="api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.CukesRunner" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.MyFirstAPITest" />
+      <option name="METHOD_NAME" value="getListOfTheBooks" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CukesRunner (1)" />
+        <item itemvalue="JUnit.MyFirstAPITest.airtableAuth" />
+        <item itemvalue="JUnit.MyFirstAPITest.getAllOrders" />
+        <item itemvalue="JUnit.MyFirstAPITest.getListOfTheBooks" />
         <item itemvalue="Cucumber Java.Feature: wikiScenarioOutline" />
-        <item itemvalue="Cucumber Java.Scenario: Wikipedia search functionality" />
-        <item itemvalue="Cucumber Java.Feature: wiki_params" />
-        <item itemvalue="Cucumber Java.Feature: wiki_background" />
+        <item itemvalue="Cucumber Java.Scenario: User should be able to place order with different data sets" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698232942204</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="my first cucumber project">
+      <created>1699297187966</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699297187966</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">

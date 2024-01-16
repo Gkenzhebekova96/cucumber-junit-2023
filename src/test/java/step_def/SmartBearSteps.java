@@ -15,8 +15,7 @@ public class SmartBearSteps {
     SmartBearPage smartBearPage = new SmartBearPage();
     @Given("user is on the login page")
     public void user_is_on_the_login_page() {
-        Driver.getDriver().get("http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx");
-
+        Driver.getDriver().get(Config.getProperty("urlSmartBear"));
     }
     @When("user should be able to login")
     public void user_should_be_able_to_login() {
@@ -59,49 +58,59 @@ public class SmartBearSteps {
 
     }
     @Given("User enters {string} to quantity input box")
-    public void user_enters_to_quantity_input_box(String string) {
+    public void user_enters_to_quantity_input_box(String quantityNum) {
+        webOrdersSBPage.quantity.sendKeys(quantityNum);
 
     }
     @Given("User enters {string} to costumer name input box")
-    public void user_enters_to_costumer_name_input_box(String string) {
+    public void user_enters_to_costumer_name_input_box(String name) {
+        webOrdersSBPage.name.sendKeys(name);
 
     }
     @Given("User enters {string} to street name input box")
-    public void user_enters_to_street_name_input_box(String string) {
+    public void user_enters_to_street_name_input_box(String streetName) {
+        webOrdersSBPage.Street.sendKeys(streetName);
 
     }
     @Given("User enters {string} to city input box")
-    public void user_enters_to_city_input_box(String string) {
+    public void user_enters_to_city_input_box(String cityName) {
+        webOrdersSBPage.City.sendKeys(cityName);
 
     }
     @Given("User enters {string} to state input box")
-    public void user_enters_to_state_input_box(String string) {
+    public void user_enters_to_state_input_box(String stateName) {
+        webOrdersSBPage.State.sendKeys(stateName);
 
     }
     @Given("User enters {string} to zip input box")
-    public void user_enters_to_zip_input_box(String string) {
+    public void user_enters_to_zip_input_box(String zipCode) {
+        webOrdersSBPage.zipCode.sendKeys(zipCode);
 
     }
     @Given("User selects {string} as card type from radio buttons")
-    public void user_selects_as_card_type_from_radio_buttons(String string) {
+    public void user_selects_as_card_type_from_radio_buttons(String carType) {
+        webOrdersSBPage.VisaRadioBtn.click();
 
     }
     @Given("User enters {string} to card number input box")
-    public void user_enters_to_card_number_input_box(String string) {
+    public void user_enters_to_card_number_input_box(String cardNum) {
+        webOrdersSBPage.CardNumber.sendKeys(cardNum);
 
     }
     @Given("User enters {string} to expiration date into input box")
-    public void user_enters_to_expiration_date_into_input_box(String string) {
+    public void user_enters_to_expiration_date_into_input_box(String expiryDate) {
+        webOrdersSBPage.ExpiryDate.sendKeys(expiryDate);
 
     }
     @Given("User clicks process button")
     public void user_clicks_process_button() {
+        webOrdersSBPage.processBtn.click();
 
     }
-    @Then("User verifies {string} is in the table")
-    public void user_verifies_is_in_the_table(String string) {
+    //@Then("User verifies {string} is in the table")
+   // public void user_verifies_is_in_the_table(String string) {
 
-    }
+
 
 
 
