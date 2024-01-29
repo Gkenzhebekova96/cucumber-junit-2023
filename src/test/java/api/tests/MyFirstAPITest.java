@@ -41,7 +41,7 @@ public class MyFirstAPITest {
     @Test
     public void airtableAuth(){
         Response response = RestAssured.given()
-                .header("Authorization","Bearer patHgX1mfbTkGbIbY.4dc829cd23c291d74bf15a5f07d924f7f8c7241fd98041cfdaf4d91e972a6473")
+                .header("Authorization","Bearer pateb0GrCFayT8sW0.90caf36037c928131c8a405453a3fa141122d84416394e42063b8d0c576ef18b")
                 .urlEncodingEnabled(false)
                 .get("https://api.airtable.com/v0/appNPDRE8H2Nl0HBL/Table%201");
         System.out.println(response.statusCode());

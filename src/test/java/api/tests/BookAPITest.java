@@ -1,5 +1,6 @@
 package api.tests;
 
+import Utilitis.Config;
 import api.models.book.BookRecords;
 import api.models.book.CreateOrder;
 import api.models.book.Order;
@@ -65,12 +66,13 @@ public class BookAPITest {
         ObjectMapper objectMapper = new ObjectMapper();
 
         String requestBody = objectMapper.writeValueAsString(createOrder);
+
         System.out.println(requestBody);
         Response response=RestAssured.given()
-                .header("Authorization","Bearer 70f4b764d41629b43af2247b28a71b94f68e1b188889a449b4e85279dc848a4b")
+                .header("Authorization","Bearer pateb0GrCFayT8sW0.90caf36037c928131c8a405453a3fa141122d84416394e42063b8d0c576ef18b")
                 .contentType(ContentType.JSON)
                 .body(requestBody)
-                .post("https://simple-books-api.glitch.me/orders");
+                .post(Config.getProperty("baseUrl"));
         System.out.println(response.statusCode());
         System.out.println(response.asString());
 
