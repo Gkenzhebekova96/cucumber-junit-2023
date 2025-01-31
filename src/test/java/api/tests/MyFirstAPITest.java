@@ -11,7 +11,7 @@ public class MyFirstAPITest {
     // 1. Hitting an endpoint or hit the api
     //2. What type of request it will be (get,post,delete),
     // auth,headers,url(endpoint),params,request body,response body
-    @Test
+    /*@Test
     public void getListOfTheBooks(){
        Response response=RestAssured.get("https://simple-books-api.glitch.me/books");
         //System.out.println(response.asString());
@@ -19,16 +19,30 @@ public class MyFirstAPITest {
         Assert.assertEquals(200,response.statusCode());
         JsonPath jsonPath=response.jsonPath();
         String str = jsonPath.get("[1].name").toString();
+        System.out.println(str);*/
+    @Test
+    public void getListOfBook(){
+       Response response = RestAssured.get("https://simple-books-api.glitch.me/books");
+        //System.out.println(response.asString());
+       // System.out.println(response.statusCode());
+        Assert.assertEquals(200,response.statusCode());
+        JsonPath jsonPath = response.jsonPath();
+        String str = jsonPath.get("[1].name");
         System.out.println(str);
-
-
         int size = jsonPath.getList("").size();
-        for (int i = 0;i <size;i++ ){
-            String names = jsonPath.get("[" + i + "].name");
+
+        for (int i =0; i<size; i++){
+            String names = jsonPath.get("["+ i +"].name");
             System.out.println(names);
 
         }
+
+
     }
+
+
+
+   /*
     //authorization
     @Test
     public void getAllOrders(){
@@ -46,7 +60,7 @@ public class MyFirstAPITest {
                 .get("https://api.airtable.com/v0/appNPDRE8H2Nl0HBL/Table%201");
         System.out.println(response.statusCode());
 
-    }
+    }*/
 
 
 

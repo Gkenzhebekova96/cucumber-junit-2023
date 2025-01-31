@@ -20,6 +20,8 @@ import io.restassured.path.xml.config.XmlPathConfig;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.response.ValidatableResponse;
+import org.apache.http.impl.conn.tsccm.RouteSpecificPool;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.InputStream;
@@ -30,22 +32,23 @@ import java.util.concurrent.TimeUnit;
 public class BookAPITest {
 
 
+@Ignore
 
     @Test
             public void createJsonObject() throws JsonProcessingException {
         BookRecords records = new BookRecords();
-        records.setId("myRendomID");
-        records.setBookId(1);
-        records.setCustomerName("Gul");
-        records.setQuantity(10);
+       records.setId("myRandomID");
+       records.setBookId(1);
+       records.setCustomerName("Gul");
+       records.setQuantity(10);
 
-        ObjectMapper objectMapper = new ObjectMapper();// this is from jackson library
+       ObjectMapper objectMapper = new ObjectMapper();// this is from jackson library
         String recordsJson=objectMapper.writeValueAsString(records);
         System.out.println(recordsJson);
 
     }
 
-    @Test
+    /*@Test
     public void createOrder() throws JsonProcessingException {
         Order order =new Order();
         order.setBookId(1);
@@ -54,6 +57,20 @@ public class BookAPITest {
         ObjectMapper objectMapper =new ObjectMapper();
         String createRecord=objectMapper.writeValueAsString(order);
         System.out.println(createRecord);
+
+    }*/
+
+    @Test
+    public void createOrder() throws JsonProcessingException {
+        Order order = new Order();
+        order.setBookId(1);
+        order.setCustomerName("Askar");
+
+        ObjectMapper objectMapper = new ObjectMapper();
+       String createRecord=  objectMapper.writeValueAsString(order);
+        System.out.println(createRecord);
+
+
 
     }
 
@@ -66,19 +83,17 @@ public class BookAPITest {
         ObjectMapper objectMapper = new ObjectMapper();
 
         String requestBody = objectMapper.writeValueAsString(createOrder);
-
         System.out.println(requestBody);
-        Response response=RestAssured.given()
-                .header("Authorization","Bearer pateb0GrCFayT8sW0.90caf36037c928131c8a405453a3fa141122d84416394e42063b8d0c576ef18b")
+
+        Response response = RestAssured.given()
+                .header("Authorization","Bearer d318e707cafb6404ba423dca318b009b3e5bcf0ff0abd33f2beaad3d25ac5b67")
                 .contentType(ContentType.JSON)
                 .body(requestBody)
-                .post(Config.getProperty("baseUrl"));
+                .post("https://simple-books-api.glitch.me/orders");
         System.out.println(response.statusCode());
         System.out.println(response.asString());
 
 
-    }
 
-
-
+}
 }
