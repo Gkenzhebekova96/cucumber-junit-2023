@@ -4,30 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa7c3041-392d-472a-8d59-0611d566cf25" name="Changes" comment="createAnOrder">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilitis/APIUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/tests/AirTableUtilitiesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AirTableBasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AirTableLoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/BtcBitPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/step_def/AirTableSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/step_def/BtcBitSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/BtcBit.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/airTableAPIs/airtableAPI.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/airTableAPIs/hybridTestExample.feature" afterDir="false" />
+    <list default="true" id="fa7c3041-392d-472a-8d59-0611d566cf25" name="Changes" comment="updatedwithBTCBIT">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilitis/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilitis/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/models/MyFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/models/MyFields.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/models/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/models/Record.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/models/RequestBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/models/RequestBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/models/ResponseBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/models/ResponseBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/models/book/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/models/book/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/BookAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/BookAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/MyFirstAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/MyFirstAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BtcBitPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BtcBitPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step_def/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_def/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/smartBear.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/smartBear.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step_def/BtcBitSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_def/BtcBitSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/BtcBit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/BtcBit.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +81,7 @@
       <recent name="C:\Users\Gul" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Client registration">
+  <component name="RunManager" selected="JUnit.CukesRunner">
     <configuration name="Scenario: Client registration" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/BtcBit.feature" />
@@ -120,18 +102,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookAPITest.createJsonObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User logins successfully" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/BtcBit.feature" />
+      <option name="GLUE" value="step_def" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SeleniumFall23" />
+      <option name="NAME_FILTER" value="^User logins successfully$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User logins successfully$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User logins successfully" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.tests.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="api.tests" />
-      <option name="MAIN_CLASS_NAME" value="api.tests.BookAPITest" />
-      <option name="METHOD_NAME" value="createJsonObject" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -185,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Client registration" />
         <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Client registration" />
+        <item itemvalue="Cucumber Java.Scenario: User logins successfully" />
         <item itemvalue="JUnit.BookAPITest.postAnOrder" />
         <item itemvalue="JUnit.BookAPITest.createOrder" />
-        <item itemvalue="JUnit.BookAPITest.createJsonObject" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706540285352</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updatedwithBTCBIT">
+      <created>1738337195673</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738337195673</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -247,6 +240,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="my first cucumber project" />
     <MESSAGE value="createAnOrder" />
-    <option name="LAST_COMMIT_MESSAGE" value="createAnOrder" />
+    <MESSAGE value="updatedwithBTCBIT" />
+    <option name="LAST_COMMIT_MESSAGE" value="updatedwithBTCBIT" />
   </component>
 </project>

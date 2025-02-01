@@ -28,6 +28,43 @@ public class BtcBitPage {
 
 
 
+    //-----------------------------------------------
+
+    @FindBy (xpath = "//div[@class=\"header_links__Q5ogU\"]//a[2]")
+    public WebElement LoginBtn;
+
+    @FindBy (xpath = "//button[@type=\"submit\"]")
+    public WebElement SignInBtn;
+
+    @FindBy (xpath = "//*[contains(text(),'Invalid email or password')]")
+    public WebElement ErrorMessage;
+
+
+
+    @FindBy (xpath = "//*[contains(text(),'+9710555513258')]")
+    public WebElement contactNumber;
+
+
+
+
+    @FindBy (xpath = "")
+    public WebElement
+
+    @FindBy (xpath = "")
+    public WebElement
+
+    @FindBy (xpath = "")
+    public WebElement
+
+
+
+
+
+
+
+
+
+
 
 
 
