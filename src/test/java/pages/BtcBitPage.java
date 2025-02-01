@@ -47,17 +47,6 @@ public class BtcBitPage {
 
 
 
-    @FindBy (xpath = "")
-    public WebElement
-
-    @FindBy (xpath = "")
-    public WebElement
-
-    @FindBy (xpath = "")
-    public WebElement
-
-
-
 
 
 
