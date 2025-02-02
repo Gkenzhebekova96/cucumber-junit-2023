@@ -82,7 +82,7 @@ public class BtcBitSteps {
 
 
     @When("user should be able to click Login button")
-    public void user_should_be_able_to_click_login_button() {
+    public void user_should_be_able_to_click_Login_button() {
 
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\"header_links__Q5ogU\"]//a[2]")));
@@ -126,9 +126,25 @@ public class BtcBitSteps {
 
     }
 
+    ///---------------------------------------------------------------------------
+
+
+    @When("user should be able to click login button")
+    public void user_should_be_able_to_click_login_button() {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\"header_links__Q5ogU\"]//a[2]")));
+        //driver.executeScript("window.scrollBy(0, 1000)");
+        btcBitPage.LoginBtn.click();
+
+    }
+
+
+
     @When("user should input incorrect email address")
     public void user_should_input_incorrect_email_address() {
-        btcBitPage.emailBtn.sendKeys("Huratojapan@gmail.com");
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name=\"email\"]")));
+        btcBitPage.IncorrectEmailBtn.sendKeys("Huratojapan@gmail.com");
 
     }
     @When("user should input incorrect password")
@@ -147,6 +163,8 @@ public class BtcBitSteps {
 
     }
 
+    //------------------------------------------------------------------------------------------------
+
 
 
     @Then("user  should see the phone number displayed correctly")
@@ -156,7 +174,8 @@ public class BtcBitSteps {
     }
     @Then("user  should see the email address displayed correctly")
     public void user_should_see_the_email_address_displayed_correctly() {
-        ;
+
+
     }
     @Then("user should see the address displayed correctly")
     public void user_should_see_the_address_displayed_correctly() {

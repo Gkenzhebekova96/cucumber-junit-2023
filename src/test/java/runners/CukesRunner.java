@@ -8,9 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"html:target/cucumber-report.html"},
         features ="src/test/resources/features",
-        glue ="step_def",
-        tags =" @CheckingDataOnTheContactPage",
-        dryRun=true
+        glue ="@BtcBitNegativeLogin",
+        dryRun=false
 )
 
 public class CukesRunner {
