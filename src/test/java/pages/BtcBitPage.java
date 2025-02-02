@@ -43,6 +43,11 @@ public class BtcBitPage {
     public WebElement ErrorMessage;
     @FindBy (xpath = "//*[contains(text(),'+9710555513258')]")
     public WebElement contactNumber;
+    @FindBy(xpath = "/html/body/div[1]/div/main/div[2]/div[4]/div/div[3]/span[2]")
+    public WebElement EmailAddress;
+    @FindBy(xpath = "//*[@id=\"scroll-container\"]/div/main/div[2]/div[4]/div/div[1]/span[2];")
+    public WebElement AddressProfilePage;
+
 
 
 

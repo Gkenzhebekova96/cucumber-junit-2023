@@ -174,22 +174,15 @@ public class BtcBitSteps {
     }
     @Then("user  should see the email address displayed correctly")
     public void user_should_see_the_email_address_displayed_correctly() {
+        Assert.assertTrue(btcBitPage.EmailAddress.isDisplayed());
 
 
     }
     @Then("user should see the address displayed correctly")
     public void user_should_see_the_address_displayed_correctly() {
+        Assert.assertTrue(btcBitPage.AddressProfilePage.isDisplayed());
 
     }
-    @Then("user  should see the email link working")
-    public void user_should_see_the_email_link_working() {
-
-    }
-    @Then("user  should see the map link working")
-    public void user_should_see_the_map_link_working() {
-
-    }
-
 
 
 }
